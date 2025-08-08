@@ -3,16 +3,19 @@
 这是一个演示项目，展示了如何使用 LangGraph 构建一个自适应 RAG (Retrieval-Augmented Generation) 系统。项目包含一个 React 前端和一个 Python (FastAPI) 后端。
 
 ## 项目结构
+
+```text
 .
-├── backend/      # Python FastAPI 后端
+├── LICENSE
+├── README.md
+├── backend/
+│   ├── .gitignore
 │   ├── adaptive_rag.py
 │   ├── api.py
 │   ├── main.py
-│   ├── README.md   # 后端专属说明
-│   └── ...
-├── frontend/     # React 前端 (待开发)
-└── README.md     # 本文档
-
+│   └── requirements.txt
+└── frontend/         # (待开发)
+```
 
 ## 后端 (Backend)
 
