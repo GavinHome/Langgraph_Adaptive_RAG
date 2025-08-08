@@ -1,8 +1,8 @@
 # LangGraph Adaptive RAG Project
 
-这是一个演示项目，展示了如何使用 LangGraph 构建一个自适应 RAG (Retrieval-Augmented Generation) 系统。项目包含一个 React 前端和一个 Python (FastAPI) 后端。
+This is a demo project that demonstrates how to build an Adaptive RAG (Retrieval-Augmented Generation) system using LangGraph. The project includes a React frontend and a Python (FastAPI) backend.
 
-## 项目结构
+## Project Structure
 
 ```text
 .
@@ -24,61 +24,61 @@
         └── index.js
 ```
 
-## 后端 (Backend)
+## Backend
 
-后端使用 Python、FastAPI 和 LangGraph 实现 Adaptive RAG 流程。
+The backend is implemented using Python, FastAPI, and LangGraph to create the Adaptive RAG flow.
 
-详细的设置和运行说明，请参考 [backend/README.md](./backend/README.md)。
+For detailed setup and running instructions, please refer to [backend/README.md](./backend/README.md).
 
-### 快速启动
+### Quick Start
 
-1.  **进入后端目录**
+1.  **Navigate to the backend directory**
     ```bash
     cd backend
     ```
 
-2.  **设置环境并安装依赖**
+2.  **Set up the environment and install dependencies**
     ```bash
-    # 创建并激活虚拟环境
+    # Create and activate a virtual environment
     python3 -m venv rag
     source rag/bin/activate
 
-    # 安装依赖
+    # Install dependencies
     pip install -r requirements.txt
     ```
 
-3.  **设置 API 密钥**
+3.  **Set API Keys**
     ```bash
-    export OPENAI_API_KEY="您的_OPENAI_API_密钥"
-    export TAVILY_API_KEY="您的_TAVILY_API_密钥"
+    export OPENAI_API_KEY="your_openai_api_key"
+    export TAVILY_API_KEY="your_tavily_api_key"
     ```
 
-4.  **启动 API 服务器**
+4.  **Start the API Server**
     ```bash
     python api.py
     ```
 
-## 前端 (Frontend)
+## Frontend
 
-前端使用 React 实现，提供一个用户友好的界面来与后端的 RAG 系统进行交互。
+The frontend is built with React to provide a user-friendly interface for interacting with the backend RAG system.
 
-### 快速启动
+### Quick Start
 
-1.  **进入前端目录**
+1.  **Navigate to the frontend directory**
     ```bash
     cd frontend
     ```
 
-2.  **安装依赖**
+2.  **Install dependencies**
     ```bash
     npm install
     ```
 
-3.  **启动开发服务器**
+3.  **Start the development server**
     ```bash
     npm start
     ```
-    应用将在 [http://localhost:3000](http://localhost:3000) 上运行。
+    The application will run at [http://localhost:3000](http://localhost:3000).
 
-4.  **环境变量配置**
-    前端应用可以通过 `.env` 文件配置环境变量。例如，当后端服务部署在不同地址时，可以设置 `REACT_APP_API_BASE_URL`。开发环境留空后会代理到8000端口，可以在 `package.json` 中配置。
+4.  **Environment Variables**
+    The frontend application can be configured with environment variables via `.env` files. For example, `REACT_APP_API_BASE_URL` can be set when the backend service is deployed at a different address. If left blank in the development environment, it will be proxied to port 8000, which can be configured in `package.json`.
