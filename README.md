@@ -1,4 +1,4 @@
-# LangGraph Adaptive RAG Project
+# LangGraph Adaptive RAG
 
 This is a demo project that demonstrates how to build an Adaptive RAG (Retrieval-Augmented Generation) system using LangGraph. The project includes a React frontend and a Python (FastAPI) backend.
 
@@ -8,14 +8,14 @@ This is a demo project that demonstrates how to build an Adaptive RAG (Retrieval
 .
 ├── LICENSE
 ├── README.md
+├── README.zh.md
 ├── backend/
-│   ├── .gitignore
+│   ├── README.md
 │   ├── adaptive_rag.py
 │   ├── api.py
-│   ├── main.py
 │   └── requirements.txt
 └── frontend/
-    ├── .gitignore
+    ├── README.md
     ├── package.json
     ├── public/
     │   └── index.html

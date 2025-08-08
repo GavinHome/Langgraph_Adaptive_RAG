@@ -1,4 +1,4 @@
-# LangGraph Adaptive RAG Project
+# LangGraph Adaptive RAG
 
 这是一个演示项目，展示了如何使用 LangGraph 构建一个自适应 RAG (Retrieval-Augmented Generation) 系统。项目包含一个 React 前端和一个 Python (FastAPI) 后端。
 
@@ -8,14 +8,14 @@
 .
 ├── LICENSE
 ├── README.md
+├── README.zh.md
 ├── backend/
-│   ├── .gitignore
+│   ├── README.md
 │   ├── adaptive_rag.py
 │   ├── api.py
-│   ├── main.py
 │   └── requirements.txt
 └── frontend/
-    ├── .gitignore
+    ├── README.md
     ├── package.json
     ├── public/
     │   └── index.html
