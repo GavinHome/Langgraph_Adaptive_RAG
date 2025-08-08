@@ -1,0 +1,13 @@
+langchain_community
+tiktoken
+langchain-openai
+langchain-cohere
+langchainhub
+chromadb
+langchain
+langgraph
+tavily-python
+ipython
+beautifulsoup4
+fastapi
+uvicorn[standard]
