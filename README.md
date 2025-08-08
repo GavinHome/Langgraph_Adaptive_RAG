@@ -14,7 +14,14 @@
 │   ├── api.py
 │   ├── main.py
 │   └── requirements.txt
-└── frontend/         # (待开发)
+└── frontend/
+    ├── .gitignore
+    ├── package.json
+    ├── public/
+    │   └── index.html
+    └── src/
+        ├── App.js
+        └── index.js
 ```
 
 ## 后端 (Backend)
@@ -51,20 +58,27 @@
     python api.py
     ```
 
-5.  **测试 API**
-    服务器运行后，可以在 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) 查看 API 文档，或使用以下命令测试：
-    ```bash
-    curl -X POST "http://127.0.0.1:8000/ask_test" -H "Content-Type: application/json" -d '{"question": "test"}'
-    ```
-
 ## 前端 (Frontend)
 
-前端部分计划使用 React 实现，用于提供一个用户友好的界面来与后端的 RAG 系统进行交互。
+前端使用 React 实现，提供一个用户友好的界面来与后端的 RAG 系统进行交互。
 
-**(这部分尚未开发)**
+### 快速启动
 
-### 计划功能
+1.  **进入前端目录**
+    ```bash
+    cd frontend
+    ```
 
-*   一个输入框，用于用户提问。
-*   一个显示区域，用于展示 RAG 系统返回的答案。
-*   调用后端的 `/ask` 或 `/ask_test` API 端点。
+2.  **安装依赖**
+    ```bash
+    npm install
+    ```
+
+3.  **启动开发服务器**
+    ```bash
+    npm start
+    ```
+    应用将在 [http://localhost:3000](http://localhost:3000) 上运行。
+
+4.  **环境变量配置**
+    前端应用可以通过 `.env` 文件配置环境变量。例如，当后端服务部署在不同地址时，可以设置 `REACT_APP_API_BASE_URL`。开发环境留空后会代理到8000端口，可以在 `package.json` 中配置。

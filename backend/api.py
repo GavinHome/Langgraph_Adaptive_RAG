@@ -52,10 +52,10 @@ async def ask_question(request: QuestionRequest):
 @app.post("/ask_test", response_model=AnswerResponse)
 async def ask_question_test(request: QuestionRequest):
     """
-    用于 API 测试的端点，接收一个问题，返回一个固定的答案。
+    An endpoint for API testing that receives a question and returns a fixed answer.
     """
-    print(f"收到测试问题: {request.question}")
-    fixed_answer = f"这是一个针对问题 '{request.question}' 的固定测试回答。"
+    print(f"Received test question: {request.question}")
+    fixed_answer = f"This is a fixed test response for the question '{request.question}'."
     return {"answer": fixed_answer}
 
 @app.get("/")
